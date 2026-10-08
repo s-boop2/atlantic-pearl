@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlantic Pearl | Holiday Apartments</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F8F1E9',
+            navy: '#1A365D',
+            gold: '#C9A87C',
+            softgold: '#E8D5B5',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-cream text-navy">
+
+  <!-- ===== HEADER ===== -->
+  <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-softgold/30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="Atlantic Pearl" class="h-12 w-auto" onerror="this.style.display='none'">
+        <div>
+          <div class="font-serif text-lg font-semibold tracking-wide">Atlantic Pearl</div>
+          <div class="text-[10px] tracking-[0.2em] uppercase text-navy/70">Holiday Apartments</div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#apartments" class="hover:text-gold transition">Apartments</a>
+        <a href="#morocco" class="hover:text-gold transition">Morocco</a>
+        <a href="#host" class="hover:text-gold transition">Your host</a>
+        <a href="#contact" class="hover:text-gold transition">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-navy text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-navy/90 transition">
+        Ask the host
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="max-w-7xl mx-auto px-6 pt-16 pb-20">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <!-- Left Content -->
+      <div>
+        <p class="text-xs tracking-[0.25em] uppercase text-gold mb-6 font-medium">
+          Morocco · In touch with your host
+        </p>
+
+        <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-8">
+          <span class="block">Arrive.</span>
+          <span class="block italic text-gold">Unwind.</span>
+          <span class="block">Feel Morocco.</span>
+        </h1>
+
+        <p class="text-navy/80 text-lg leading-relaxed max-w-md mb-10">
+          A place to stay, a real person to talk to, and a warm welcome to your time in Morocco.
+          Discover Atlantic Pearl apartments in Casablanca, Bouznika and other cities.
+        </p>
+
+        <p class="text-navy/60 text-base leading-relaxed max-w-md mb-10 font-serif" dir="rtl">
+          مكان للإقامة، وشخص حقيقي للتحدث معه، وترحيب دافئ بوقتكم في المغرب.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-6">
+          <a href="#apartments" class="inline-flex items-center gap-2 bg-navy text-white px-7 py-3.5 rounded-full font-medium hover:bg-navy/90 transition">
+            Explore the apartments
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </a>
+          <div class="text-sm text-navy/70">
+            <div class="font-medium">Ask directly.</div>
+            <div>Speak with your host.</div>
+          </div>
+        </div>
+
+        <div class="mt-12 flex items-center gap-3 text-sm text-navy/60">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.383 3 11.5A8.5 8.5 0 0111.5 3c4.694 0 8.5 3.806 8.5 8.5z" />
+          </svg>
+          No booking platform in between. Just a direct conversation.
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative">
+        <img
+          src="apartment-main.jpg"
+          alt="Atlantic Pearl Apartment"
+          class="w-full h-[520px] object-cover rounded-sm shadow-xl"
+          onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800'"
+        >
+
+        <div class="absolute bottom-8 left-8 bg-white p-5 shadow-lg max-w-[240px]">
+          <p class="text-[10px] tracking-[0.2em] uppercase text-gold mb-2">Atlantic Pearl</p>
+          <p class="font-serif text-lg leading-snug">
+            A warm welcome,<br>from a real host.
+          </p>
+        </div>
+
+        <a href="#apartments" class="absolute bottom-8 right-8 bg-white/90 backdrop-blur px-4 py-2 rounded-full text-xs tracking-wider uppercase font-medium hover:bg-white transition">
+          A Glimpse Inside
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="border-t border-gold/40"></div>
+
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <p class="text-xs tracking-[0.25em] uppercase text-gold mb-4">
+          A Closer Look · Atlantic Pearl
+        </p>
+        <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-6">
+          A place to feel at home.
+        </h2>
+      </div>
+
+      <div>
+        <p class="text-navy/80 text-lg leading-relaxed mb-8">
+          Take your time looking around. These are genuine views of our apartments.
+          Get in touch with your questions and travel dates.
+        </p>
+        <a href="#contact" class="inline-flex items-center gap-2 text-navy font-medium border-b border-navy pb-1 hover:text-gold hover:border-gold transition">
+          Ask us directly
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-navy text-cream py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="font-serif text-xl">Atlantic Pearl</div>
+      <div class="text-sm text-cream/70">
+        © 2026 Atlantic Pearl Holiday Apartments · Morocco
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
